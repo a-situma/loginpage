@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(135deg, #c2d4ef 0%, #e0e3e9 100%); /*This will allow us to change
+    the background of the body, excluding the container*/
+}
+
+.login-container {
+    background-color: white; /* This changes the color of the container */
+    padding: 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(62, 4, 4)
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    background-color: #062547;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 10px;
+    min-height: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: #black;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold; /* This makes the footer text bold */
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 10px;
+        max-width: 90%;
+    }
+}
